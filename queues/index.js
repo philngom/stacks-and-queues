@@ -1,7 +1,10 @@
 class Queue {
 
+  // #queue = [];
+
   constructor() {
     this.queue = [];
+    this.index = 0;
   }
 
   enqueue(item) {
@@ -9,19 +12,20 @@ class Queue {
   }
 
   dequeue() {
+    // this.index++;
     return this.queue.shift();
   }
 
   hasNext() {
-    return this.queue[0] ? true : false;
+    return !!this.queue.length;
   }
 
 }
 
-// const queue = new Queue;
-// queue.enqueue('hello');
-// queue.enqueue('bye');
-// console.log(queue.dequeue());
-// console.log(queue);
-// console.log(queue.dequeue());
-// console.log(queue.hasNext());
+const queue = new Queue;
+queue.enqueue('hello');
+queue.enqueue('bye');
+console.log(queue.dequeue());
+console.log(queue);
+console.log(queue.dequeue());
+console.log(queue.hasNext());
