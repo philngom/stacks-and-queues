@@ -1,7 +1,6 @@
 {
   "name": "stacks-queues",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "type": "commonjs",
   "scripts": {
@@ -27,5 +26,14 @@
   },
   "dependencies": {
     "cross-env": "^7.0.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philngom/stacks-and-queues.git"
+  },
+  "bugs": {
+    "url": "https://github.com/philngom/stacks-and-queues/issues"
+  },
+  "homepage": "https://github.com/philngom/stacks-and-queues#readme",
+  "description": ""
 }
