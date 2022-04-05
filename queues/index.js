@@ -1,23 +1,24 @@
 class Queue {
 
-  // #queue = [];
+  // eslint-disable
+  #queue = [];
 
-  constructor() {
-    this.queue = [];
-    this.index = 0;
-  }
+  // constructor() {
+  //   this.queue = [];
+  //   this.index = 0;
+  // }
 
   enqueue(item) {
-    return this.queue.push(item);
+    return this.#queue.push(item);
   }
 
   dequeue() {
     // this.index++;
-    return this.queue.shift();
+    return this.#queue.shift();
   }
 
   hasNext() {
-    return !!this.queue.length;
+    return !!this.#queue.length;
   }
 
 }
